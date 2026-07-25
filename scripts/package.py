@@ -10,6 +10,7 @@ VERSION = json.loads((ROOT / "package.json").read_text(encoding="utf-8"))["versi
 BUILD = ROOT / "build"
 STAGING = BUILD / PLUGIN_NAME
 ARCHIVE = BUILD / f"deckmate-v{VERSION}.zip"
+STABLE_ARCHIVE = BUILD / "deckmate.zip"
 
 FILES = [
     "LICENSE",
@@ -40,7 +41,9 @@ def main():
             if path.is_file():
                 archive.write(path, path.relative_to(BUILD))
 
+    shutil.copy2(ARCHIVE, STABLE_ARCHIVE)
     print(ARCHIVE)
+    print(STABLE_ARCHIVE)
     print(f"Packaged {len(FILES)} files under {PLUGIN_NAME}/")
 
 

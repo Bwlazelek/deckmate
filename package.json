@@ -1,6 +1,6 @@
 {
   "name": "deckmate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A safe AI setup assistant for Steam Deck Gaming Mode",
   "type": "module",
   "scripts": {

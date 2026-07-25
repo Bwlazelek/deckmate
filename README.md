@@ -51,11 +51,17 @@ python3 scripts/package.py
 ### Decky Developer installation
 
 1. Install Decky Loader from [decky.xyz](https://decky.xyz/) if it is not already installed.
-2. Copy `deckmate-v0.1.0.zip` to the Steam Deck.
+2. Copy `deckmate.zip` to the Steam Deck, or use the stable update URL below.
 3. In Decky settings, enable Developer Mode.
 4. Open the Developer section and choose **Install Plugin from ZIP**.
 5. Select the DeckMate ZIP and install it.
 6. Open the Quick Access menu (`…`) and select DeckMate.
+
+Stable Developer Mode install/update URL:
+
+```text
+https://github.com/Bwlazelek/deckmate/releases/latest/download/deckmate.zip
+```
 
 If the local ZIP installer is unavailable in the installed Decky version, extract the `DeckMate` directory to:
 

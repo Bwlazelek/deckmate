@@ -5,7 +5,7 @@ from deckmate_core import DeckMateCore, DeckMateError
 
 class Plugin:
     async def _main(self):
-        self.core = DeckMateCore(decky.DECKY_SETTINGS_DIR, decky.DECKY_USER_HOME)
+        self.core = DeckMateCore(decky.decky_SETTINGS_DIR, decky.DECKY_USER_HOME)
         decky.logger.info("DeckMate v0.1 started in safe non-root mode")
 
     async def _unload(self):

@@ -43,6 +43,8 @@ jobs:
       - name: Upload installable plugin
         uses: actions/upload-artifact@v4
         with:
-          name: deckmate-v0.1.0
-          path: build/deckmate-v0.1.0.zip
+          name: deckmate-plugin
+          path: |
+            build/deckmate-v*.zip
+            build/deckmate.zip
           if-no-files-found: error
